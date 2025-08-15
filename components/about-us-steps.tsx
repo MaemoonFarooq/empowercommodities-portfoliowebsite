@@ -29,7 +29,7 @@ function SkewedBox({
   return (
     <div
       style={{
-        position: "absolute",
+        position: isMobile ? "relative" : "absolute",
         top: isMobile ? "auto" : `${top}px`,
         left: isMobile ? "0vw" : `${left}px`,
         width: mobileWidth,
@@ -54,7 +54,7 @@ function SkewedBox({
         display: "flex",
         flexDirection: "column",
         marginBottom: isMobile ? "20px" : "0",
-        position: isMobile ? "relative" : "absolute",
+        
         opacity: isVisible ? 1 : 0,
         transition: "opacity 0.8s ease-in-out, background-color 0.3s ease, color 0.3s ease",
         cursor: "pointer",
@@ -89,7 +89,7 @@ function SkewedBox({
   )
 }
 
-export default function EmpowerCommodities(props) {
+export default function EmpowerCommodities(props: Record<string, unknown>) {
   const [isMobile, setIsMobile] = useState(false)
   const [textVisible, setTextVisible] = useState(false)
   const [box1Visible, setBox1Visible] = useState(false)
