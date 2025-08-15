@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, memo } from "react";
 
 function TradingViewWidget() {
-  const container = useRef(null);
+  const container = useRef<HTMLDivElement>(null); // ✅ specify type
 
   useEffect(() => {
     if (!container.current) return;
@@ -17,7 +17,7 @@ function TradingViewWidget() {
       lineWidth: 2,
       lineType: 0,
       chartType: "area",
-      backgroundColor: "#0B1A27", // custom background color
+      backgroundColor: "#0B1A27",
       fontColor: "rgb(106, 109, 120)",
       gridLineColor: "rgba(242, 242, 242, 0.06)",
       volumeUpColor: "rgba(34, 171, 148, 0.5)",
@@ -29,7 +29,7 @@ function TradingViewWidget() {
       borderDownColor: "#f7525f",
       wickUpColor: "#22ab94",
       wickDownColor: "#f7525f",
-      colorTheme: "light", // prevents TradingView's dark theme from overriding bg
+      colorTheme: "light",
       isTransparent: false,
       locale: "en",
       chartOnly: false,
@@ -39,17 +39,17 @@ function TradingViewWidget() {
         "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
       valuesTracking: "1",
       changeMode: "price-and-percent",
-symbols: [
-  ["Apple", "AAPL|1D"],
-  ["Google", "GOOGL|1D"],
-  ["Microsoft", "MSFT|1D"],
-  ["Gold Spot", "OANDA:XAUUSD|1D"],
-  ["Gold Comex", "COMEX:GC1!|1D"],
-  ["Silver Comex", "COMEX:SI1!|1D"],
-  ["Platinum Nymex", "NYMEX:PL1!|1D"],
-  ["Crude Oil Nymex", "NYMEX:CL1!|1D"],
-  ["Nasdaq CME", "CME_MINI:NQ1!|1D"]
-],
+      symbols: [
+        ["Apple", "AAPL|1D"],
+        ["Google", "GOOGL|1D"],
+        ["Microsoft", "MSFT|1D"],
+        ["Gold Spot", "OANDA:XAUUSD|1D"],
+        ["Gold Comex", "COMEX:GC1!|1D"],
+        ["Silver Comex", "COMEX:SI1!|1D"],
+        ["Platinum Nymex", "NYMEX:PL1!|1D"],
+        ["Crude Oil Nymex", "NYMEX:CL1!|1D"],
+        ["Nasdaq CME", "CME_MINI:NQ1!|1D"]
+      ],
       dateRanges: [
         "1d|1",
         "1m|30",
@@ -69,7 +69,7 @@ symbols: [
       hideSymbolLogo: false,
     });
 
-    container.current.innerHTML = ""; // clear previous content
+    container.current.innerHTML = ""; // ✅ works now
     container.current.appendChild(script);
   }, []);
 
@@ -79,7 +79,7 @@ symbols: [
       style={{
         height: "500px",
         width: "100%",
-        backgroundColor: "#0B1A27", // match container bg
+        backgroundColor: "#0B1A27",
         padding: "10px",
         borderRadius: "8px",
       }}
