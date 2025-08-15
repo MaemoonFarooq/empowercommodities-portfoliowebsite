@@ -2,12 +2,9 @@ import { type NextRequest, NextResponse } from "next/server";
 import { blogService } from "../../../lib/blog-store";
 
 // GET /api/blogs/[id] - Get blog by ID
-export async function GET(
-  request: NextRequest,
-  context: { params: { id: string } }
-) {
+export async function GET(request: NextRequest, { params }: any) {
   try {
-    const id = Number.parseInt(context.params.id);
+    const id = Number.parseInt(params.id);
     if (isNaN(id)) {
       return NextResponse.json({ error: "Invalid blog ID" }, { status: 400 });
     }
@@ -24,12 +21,9 @@ export async function GET(
 }
 
 // PUT /api/blogs/[id] - Update blog
-export async function PUT(
-  request: NextRequest,
-  context: { params: { id: string } }
-) {
+export async function PUT(request: NextRequest, { params }: any) {
   try {
-    const id = Number.parseInt(context.params.id);
+    const id = Number.parseInt(params.id);
     if (isNaN(id)) {
       return NextResponse.json({ error: "Invalid blog ID" }, { status: 400 });
     }
@@ -37,7 +31,6 @@ export async function PUT(
     const body = await request.json();
     const { title, excerpt, content, author, readTime, image } = body;
 
-    // Validate required fields
     if (!title || !content || !author) {
       return NextResponse.json(
         { error: "Missing required fields: title, content, and author are required" },
@@ -66,12 +59,9 @@ export async function PUT(
 }
 
 // DELETE /api/blogs/[id] - Delete blog
-export async function DELETE(
-  request: NextRequest,
-  context: { params: { id: string } }
-) {
+export async function DELETE(request: NextRequest, { params }: any) {
   try {
-    const id = Number.parseInt(context.params.id);
+    const id = Number.parseInt(params.id);
     if (isNaN(id)) {
       return NextResponse.json({ error: "Invalid blog ID" }, { status: 400 });
     }
