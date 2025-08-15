@@ -13,7 +13,7 @@ export default function WhoWeAreSection() {
     ticker: false,
   })
 
-  const sectionRef = useRef<HTMLElement>(null)
+  const sectionRef = useRef<HTMLDivElement>(null)
   const rectanglesRef = useRef<HTMLDivElement>(null)
   const mobileRef = useRef<HTMLDivElement>(null)
   const desktopHeadingRef = useRef<HTMLDivElement>(null)
@@ -23,20 +23,24 @@ export default function WhoWeAreSection() {
   useEffect(() => {
     const observers: IntersectionObserver[] = []
 
-    const createObserver = (ref: React.RefObject<HTMLElement>, key: keyof typeof isVisible) => {
-      if (ref.current) {
-        const observer = new IntersectionObserver(
-          ([entry]) => {
-            if (entry.isIntersecting) {
-              setIsVisible((prev) => ({ ...prev, [key]: true }))
-            }
-          },
-          { threshold: 0.1 },
-        )
-        observer.observe(ref.current)
-        observers.push(observer)
-      }
-    }
+const createObserver = (
+  ref: React.RefObject<HTMLElement | null>,
+  key: keyof typeof isVisible
+) => {
+  if (ref.current) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible((prev) => ({ ...prev, [key]: true }))
+        }
+      },
+      { threshold: 0.1 }
+    )
+    observer.observe(ref.current)
+    observers.push(observer)
+  }
+}
+
 
     createObserver(rectanglesRef, "rectangles")
     createObserver(mobileRef, "mobileContent")
