@@ -28,7 +28,7 @@ export default function TwoImagesSection() {
           asChild
           className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg"
         >
-          <a href="YOUR_ANDROID_LINK" target="_blank" rel="noopener noreferrer">
+          <a href="https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/metatrader5.apk?utm_source=www.metatrader5.com&utm_campaign=install.metaquotes" target="_blank" rel="noopener noreferrer">
             Download MT5 Android App
           </a>
         </Button>
@@ -36,7 +36,7 @@ export default function TwoImagesSection() {
           asChild
           className="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg"
         >
-          <a href="YOUR_IOS_LINK" target="_blank" rel="noopener noreferrer">
+          <a href="https://apps.apple.com/us/app/metatrader-5-forex-stocks/id413251709?utm_source=support.metaquotes.net" target="_blank" rel="noopener noreferrer">
             Download MT5 iOS App
           </a>
         </Button>
