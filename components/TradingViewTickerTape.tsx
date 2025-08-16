@@ -16,13 +16,14 @@ interface TradingViewTickerTapeProps {
   displayMode?: "adaptive" | "regular";
 }
 
+
 const TradingViewTickerTape: React.FC<TradingViewTickerTapeProps> = ({
   symbols = [
-  { proName: "COMEX:GC!", title: "Gold Comex" },
-  { proName: "COMEX:SI1!", title: "Silver Comex" },
-  { proName: "NYMEX:PL1!", title: "Platinum Nymex" },
-  { proName: "NYMEX:CL1!", title: "Crude Oil Nymex" },
-  { proName: "CME_MINI:NQ1!", title: "Nasdaq CME" }
+  { proName: "OANDA:XAUUSD", title: "Gold" },
+  { proName: "OANDA:XAGUSD", title: "Silver" },
+  { proName: "OANDA:XPTUSD", title: "Platinum" },
+  { proName: "TVC:USOIL", title: "Crude Oil" },
+  { proName: "OANDA:NAS100USD", title: "Nasdaq" }
 ]
 ,
   colorTheme = "dark",

@@ -40,15 +40,11 @@ function TradingViewWidget() {
       valuesTracking: "1",
       changeMode: "price-and-percent",
       symbols: [
-        ["Apple", "AAPL|1D"],
-        ["Google", "GOOGL|1D"],
-        ["Microsoft", "MSFT|1D"],
         ["Gold Spot", "OANDA:XAUUSD|1D"],
-        ["Gold Comex", "COMEX:GC1!|1D"],
-        ["Silver Comex", "COMEX:SI1!|1D"],
-        ["Platinum Nymex", "NYMEX:PL1!|1D"],
-        ["Crude Oil Nymex", "NYMEX:CL1!|1D"],
-        ["Nasdaq CME", "CME_MINI:NQ1!|1D"]
+        ["Silver Spot", "OANDA:XAGUSD|1D"],
+        ["Platinum", "OANDA:XPTUSD|1D"],
+        ["Crude Oil", "TVC:USOIL|1D"],
+        ["Nasdaq", "OANDA:NAS100USD|1D"]
       ],
       dateRanges: [
         "1d|1",
