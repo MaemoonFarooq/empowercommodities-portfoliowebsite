@@ -41,45 +41,25 @@ export default function Component() {
   // Testimonials data (unchanged)
   const testimonials = [
     {
-      text: "PixelPeek productions exceeded our expectations! Their attention to detail in crafting props for our latest film added an unparalleled magic to the set. We're delighted to have found a creative partner in PixelPeek.",
-      from: "Luna Studios",
+      text: "Helpful and guided me well to navigate through the markets.",
+      from: "M. Huzaifa",
       bgColor: "bg-[#1a2a3a]",
     },
     {
-      text: "Collaborating with PixelPeek was a joy. Their craftsmanship brought our vision to life with precision and creativity. The resulting prop was not just an object; it was a work of art. Kudos to the PixelPeek team!",
-      from: "XYZ Studio",
+      text: "Empower helped me to find the legal platform to trade that I have been looking for weeks.",
+      from: "Atif",
       bgColor: "bg-[#1a2a3a]",
     },
     {
-      text: "PixelPeek productions exceeded our expectations! Their attention to detail in crafting props for our latest film added an unparalleled magic to the set. We're delighted to have found a creative partner in PixelPeek.",
-      from: "Traders Co.",
-      bgColor: "bg-gray-700",
+      text: "As a beginner to this market, the one-on-one sessions allowed me to use MetaTrader without making any mistakes and also provided me technical knowledge.",
+      from: "Zaryab Khan",
+      bgColor: "bg-[#1a2a3a]",
     },
     {
-      text: "PixelPeek productions exceeded our expectations! Their attention to detail in crafting props for our latest film added an unparalleled magic to the set. We're delighted to have found a creative partner in PixelPeek.",
-      from: "ABCD1.",
-      bgColor: "bg-gray-700",
-    },
-    {
-      text: "PixelPeek productions exceeded our expectations! Their attention to detail in crafting props for our latest film added an unparalleled magic to the set. We're delighted to have found a creative partner in PixelPeek.",
-      from: "ABCD 2.",
-      bgColor: "bg-gray-700",
-    },
-    {
-      text: "PixelPeek productions exceeded our expectations! Their attention to detail in crafting props for our latest film added an unparalleled magic to the set. We're delighted to have found a creative partner in PixelPeek.",
-      from: "ABCD 2.",
-      bgColor: "bg-gray-700",
-    },
-    {
-      text: "PixelPeek productions exceeded our expectations! Their attention to detail in crafting props for our latest film added an unparalleled magic to the set. We're delighted to have found a creative partner in PixelPeek.",
-      from: "ABCD 2.",
-      bgColor: "bg-gray-700",
-    },
-    {
-      text: "PixelPeek productions exceeded our expectations! Their attention to detail in crafting props for our latest film added an unparalleled magic to the set. We're delighted to have found a creative partner in PixelPeek.",
-      from: "ABCD 2.",
-      bgColor: "bg-gray-700",
-    },
+      text: "Apart from freelancing, I was looking for a source which must be authorized and then I found PMEX through Empower Commodities. Qualified staff and fundamental knowledge helped me understand the basics of the commodities market.",
+      from: "Faiza Ali",
+      bgColor: "bg-[#1a2a3a]",
+    },  
   ]
 
   // Duplicate array for infinite scroll
