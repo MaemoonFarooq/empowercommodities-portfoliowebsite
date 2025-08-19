@@ -12,7 +12,7 @@ export function CareerHeroSection() {
   }, [])
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-screen overflow-hidden cursor-dark-area">
       {/* Background Image */}
       <Image
         src="/modern-curved-building.png"

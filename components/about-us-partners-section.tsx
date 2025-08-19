@@ -37,21 +37,21 @@ export function AboutUsPartnersSection() {
   ]
 
   return (
-    <section ref={sectionRef} className="bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+    <section ref={sectionRef} className="bg-white cursor-white-area">
+      <div className="max-w-7xl mx-auto cursor-white-area">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 cursor-white-area">
           {partnerBoxes.map((partner, index) => {
             // Center text box
             if (index === 4) {
               return (
                 <div
                   key={index}
-                  className={`bg-gray-100 flex items-center justify-center h-64 lg:h-80 transition-all duration-1000 ${
+                  className={`bg-gray-100 flex items-center justify-center h-64 lg:h-80 transition-all duration-1000 cursor-white-area ${
                     isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
                   }`}
                   style={{ transitionDelay: `${index * 100}ms` }}
                 >
-                  <h3 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-[#1a2a3a] text-center">
+                  <h3 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-[#1a2a3a] text-center cursor-white-area">
                     WHO CAN JOIN US
                   </h3>
                 </div>
@@ -62,7 +62,7 @@ export function AboutUsPartnersSection() {
             return (
               <div
                 key={index}
-                className={`relative overflow-hidden h-64 lg:h-80 group cursor-pointer transition-all duration-1000 ${
+                className={`relative overflow-hidden h-64 lg:h-80 group cursor-pointer transition-all duration-1000 cursor-white-area ${
                   isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
@@ -72,16 +72,16 @@ export function AboutUsPartnersSection() {
                   src={partner!.image}
                   alt={partner!.alt}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110 cursor-white-area"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                 />
 
                 {/* Dark overlay */}
-                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-all duration-300" />
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-all duration-300 cursor-white-area" />
 
                 {/* Logo text */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h4 className="text-white text-xl lg:text-2xl xl:text-3xl font-bold text-center">
+                <div className="absolute inset-0 flex items-center justify-center cursor-dark-area">
+                  <h4 className="text-white text-xl lg:text-2xl xl:text-3xl font-bold text-center cursor-dark-area">
                     {partner!.logo}
                   </h4>
                 </div>

@@ -13,7 +13,7 @@ export function HomepageMinimal() {
   }, [])
 
   return (
-    <section className="bg-white-50 pt-8 pb-16 px-4 sm:px-6 lg:px-8"> {/* Changed from min-h-screen flex items-center justify-center to pt-8 pb-16 */}
+    <section className="bg-white-50 pt-8 pb-16 px-4 sm:px-6 lg:px-8 cursor-white-area"> {/* Changed from min-h-screen flex items-center justify-center to pt-8 pb-16 */}
       <div className="mx-auto text-center"> {/* Removed mt-[-5rem] */}
         {/* Logo/Icon */}
         <div

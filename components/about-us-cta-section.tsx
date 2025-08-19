@@ -26,7 +26,7 @@ export function AboutUsCtaSection() {
   return (
     <section
       ref={sectionRef}
-      className="bg-gray-100 py-48 lg:py-72" // taller section
+      className="bg-gray-100 py-48 lg:py-72 cursor-white-area" // taller section
     >
       <div className="max-w-full mx-auto px-8 sm:px-12 lg:px-20"> 
         <div className="text-center">

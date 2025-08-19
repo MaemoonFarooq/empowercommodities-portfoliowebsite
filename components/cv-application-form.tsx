@@ -66,7 +66,7 @@ export function CvApplicationForm() {
   }
 
   return (
-    <section ref={sectionRef} className="bg-black py-16 px-4 sm:px-6 lg:px-8">
+    <section ref={sectionRef} className="bg-black py-16 px-4 sm:px-6 lg:px-8 cursor-dark-area">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className={`text-center mb-12 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>

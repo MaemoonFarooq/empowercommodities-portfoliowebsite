@@ -29,7 +29,7 @@ export function CareerCallToBrokers() {
   return (
     <section ref={sectionRef} className="relative">
       {/* Call To Brokers Section */}
-      <div className="bg-white py-16 lg:py-20">
+      <div className="bg-white py-16 lg:py-20 cursor-white-area">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className={`transition-all duration-1000 ${
@@ -106,10 +106,10 @@ export function CareerCallToBrokers() {
       </div>
 
       {/* Gradient Transition Section */}
-      <div className="h-32 bg-gradient-to-b from-white via-gray-300 to-slate-800"></div>
+      <div className="h-32 bg-gradient-to-b from-white via-gray-300 to-slate-800 cursor-white-area"></div>
 
       {/* Who We Hire Section */}
-      <div className="bg-slate-800 py-16 lg:py-20">
+      <div className="bg-slate-800 py-16 lg:py-20 cursor-dark-area">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className={`transition-all duration-1000 delay-700 ${

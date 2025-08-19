@@ -230,7 +230,9 @@ export function AgrifuturesComponent() {
   }
 
   return (
-    <div className="w-full bg-slate-800 overflow-hidden">
+    <div className="w-full bg-slate-800 overflow-hidden cursor-dark-area">
+
+
       {/* Preload critical images */}
       <link rel="preload" href="/gold.jpg" as="image" />
       <link rel="preload" href="/silver.jpg" as="image" />
@@ -238,7 +240,7 @@ export function AgrifuturesComponent() {
       <link rel="preload" href="/wheat.jpg" as="image" />
       <link rel="preload" href="/soyabean.jpg" as="image" />
 
-      <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 md:gap-12 mb-6 md:mb-12 justify-center items-center px-2 py-4 sm:py-6">
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 md:gap-12 mb-6 md:mb-12 justify-center items-center px-2 py-4 sm:py-6 cursor-dark-area">
         <Button
           variant="ghost"
           className={`w-full sm:w-auto text-base sm:text-lg md:text-2xl font-bold tracking-[0.1em] sm:tracking-[0.2em] px-3 sm:px-4 py-2 sm:py-3 hover:bg-transparent transition-colors ${

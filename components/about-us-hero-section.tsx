@@ -54,7 +54,7 @@ const createObserver = (
   return (
     <section
       ref={sectionRef}
-      className="bg-white h-screen relative overflow-hidden md:h-auto"
+      className="bg-white h-screen relative overflow-hidden md:h-auto cursor-white-area"
       style={{
         height: "870px",
         // moves it up but no extra space below

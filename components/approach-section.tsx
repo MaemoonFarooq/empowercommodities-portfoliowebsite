@@ -15,7 +15,7 @@ export default function ApproachSection() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
 
   return (
-    <div ref={sectionRef} className="min-h-screen bg-white p-4 md:p-8 relative overflow-hidden">
+    <div ref={sectionRef} className="min-h-screen bg-white p-4 md:p-8 relative overflow-hidden cursor-white-area">
       <div className="max-w-7xl mx-auto relative">
         {/* Vertical "OUR APPROACH" text */}
         <motion.div

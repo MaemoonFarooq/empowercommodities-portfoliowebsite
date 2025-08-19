@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { Twitter, Facebook, Youtube, Instagram, Linkedin, Globe, ChevronDown } from "lucide-react"
+import { XIcon } from "./XIcon"   // <-- import custom icon
 
 export function Footer() {
   const [isVisible, setIsVisible] = useState(false)
@@ -119,7 +120,7 @@ export function Footer() {
           {/* Social & Language */}
           <div className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <div className="flex space-x-3 lg:space-x-4 mb-4">
-              {[Twitter, Facebook, Youtube, Instagram, Linkedin].map((Icon, i) => (
+              {[XIcon, Facebook, Youtube, Instagram, Linkedin].map((Icon, i) => (
                 <Link key={i} href="#" className="text-gray-600 hover:text-gray-900 transition-all duration-300">
                   <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
                 </Link>

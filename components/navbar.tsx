@@ -9,7 +9,7 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-gray-900 text-white sticky top-0 z-50 backdrop-blur-sm bg-gray-900/95 transition-all duration-300">
+    <header className="bg-gray-900 text-white sticky top-0 z-50 backdrop-blur-sm bg-gray-900/95 transition-all duration-300 cursor-dark-area">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-16 relative">
           {/* Left side */}

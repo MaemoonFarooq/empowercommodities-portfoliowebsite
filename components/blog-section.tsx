@@ -52,8 +52,8 @@ export default function BlogSection() {
 
   if (isLoading) {
     return (
-      <div className="w-full px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-center py-12">
+      <div className="w-full px-4 sm:px-6 lg:px-8 cursor-white-area">
+        <div className="flex items-center justify-center py-12 cursor-white-area">
           <div className="flex items-center gap-2">
             <Loader2 className="w-6 h-6 animate-spin" />
             <span>Loading blogs...</span>
@@ -81,7 +81,7 @@ export default function BlogSection() {
 
   if (blogs.length === 0) {
     return (
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8 cursor-white-area">
         <div className="text-center py-12">
           <p className="text-gray-500 text-lg">No blog posts available yet.</p>
           <p className="text-gray-400 text-sm mt-2">Check back later for new content!</p>
@@ -91,7 +91,7 @@ export default function BlogSection() {
   }
 
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8">
+    <div className="w-full px-4 sm:px-6 lg:px-8 cursor-white-area">
       {/* Mobile Layout */}
       <div className="block md:hidden">
         {/* BLOGS text at top for mobile */}
@@ -176,10 +176,10 @@ export default function BlogSection() {
             {blogs.map((blog) => (
               <Card
                 key={blog.id}
-                className="cursor-pointer transition-all duration-200 hover:shadow-lg hover:scale-[1.02] group w-full"
+                className="cursor-pointer transition-all duration-200 hover:shadow-lg hover:scale-[1.02] group w-full cursor-white-area"
                 onClick={() => openBlogModal(blog)}
               >
-                <div className="flex flex-col h-full">
+                <div className="flex flex-col h-full cursor-white-area">
                   {/* Blog image */}
                   <div className="w-full">
                     <div className="relative h-48 overflow-hidden rounded-t-lg">

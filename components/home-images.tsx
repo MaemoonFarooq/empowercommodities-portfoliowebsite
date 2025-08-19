@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"; // Assuming you have a Button c
 
 export default function TwoImagesSection() {
   return (
-    <section className="bg-white py-20 px-6 flex flex-col md:flex-row md:justify-between items-center gap-8">
+    <section className="bg-white py-20 px-6 flex flex-col md:flex-row md:justify-between items-center gap-8 cursor-white-area">
       {/* Left Image */}
       <motion.div
         initial={{ opacity: 0, x: -150 }}

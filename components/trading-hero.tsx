@@ -16,7 +16,7 @@ export function TradingHero({
   };
 
   return (
-    <div className="bg-white min-h-[80vh] flex items-center justify-center p-8">
+    <div className="bg-white min-h-[80vh] flex items-center justify-center p-8 cursor-white-area">
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <motion.div
