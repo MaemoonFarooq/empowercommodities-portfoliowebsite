@@ -79,14 +79,22 @@ export function TradingHero({
                 className="lg:block w-full relative lg:left-[69px] lg:top-[10px] -left 10 -top-2"
               >
                 <motion.div whileHover={{ scale: 1.05 }}>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold px-8 py-3 rounded-full bg-transparent lg:px-10 transition-all duration-300"
-                  >
-                    DOWNLOAD PRODUCT SPECIFICATION SHEET
-                  </Button>
-                </motion.div>
+  <a
+    href="/Product Specification Sheet of Empower Commodities.pdf"
+    download
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Button
+      variant="outline"
+      size="lg"
+      className="border-2 border-black text-black hover:bg-black hover:text-white font-semibold px-8 py-3 rounded-full bg-transparent lg:px-10 transition-all duration-300"
+    >
+      DOWNLOAD PRODUCT SPECIFICATION SHEET
+    </Button>
+  </a>
+</motion.div>
+
               </div>
 
               {/* Start Trading Button - Mobile adjustments via Tailwind classes */}
