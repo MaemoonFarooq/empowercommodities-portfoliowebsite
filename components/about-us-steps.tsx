@@ -314,6 +314,7 @@ export default function EmpowerCommodities(props: Record<string, unknown>) {
 
   return (
     <section
+      className="w-full bg-slate-800 overflow-hidden cursor-dark-area"
       style={{
         backgroundColor: "#0B1A27",
         height: isMobile ? "auto" : "100vh",

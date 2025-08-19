@@ -90,7 +90,7 @@ function LocationTabs() {
 
         <div>
           <p className="text-gray-700 font-semibold">274MB, FIRST FLOOR,</p>
-          <p className="text-gray-600">DHA PHASE 6, LAHORE</p>
+          <p className="text-gray-600">DHA PHASE 6, LAHORE +92-3244626888</p>
         </div>
       </div>
     </div>

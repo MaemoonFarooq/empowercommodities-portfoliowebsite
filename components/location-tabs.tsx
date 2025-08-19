@@ -25,12 +25,12 @@ export function LocationTabs() {
       {
         name: "DHA",
         building: "BUILDING #439 FIRST FLOOR",
-        address: "DHA PHASE 2/Q BLOCK LHR",
+        address: "DHA PHASE 2/Q BLOCK LHR +92 312 4400860",
       },
       {
         name: "SHADMAN",
         building: "BUILDING NUMBER 78,",
-        address: "SHADMAN 1, LAHORE GROUND FLOOR",
+        address: "SHADMAN 1, LAHORE GROUND FLOOR +92 320 0408003",
       },
     ],
   }
@@ -43,7 +43,7 @@ export function LocationTabs() {
         //, , 
         name: "Office #3006",
         building: "3rd Floor #3006 GIGA Mall/ World Trade Center",
-        address: "DHA Phase 2, Sector F, Islamabad.",
+        address: "DHA Phase 2, Sector F, Islamabad +92-3177566692",
       }
     ],
   }
@@ -131,7 +131,7 @@ export function LocationTabs() {
           <p className="text-gray-700 font-semibold group-hover:text-gray-600 transition-colors duration-300">
             274MB, FIRST FLOOR,
           </p>
-          <p className="text-gray-600 group-hover:text-gray-500 transition-colors duration-300">DHA PHASE 6, LAHORE</p>
+          <p className="text-gray-600 group-hover:text-gray-500 transition-colors duration-300">DHA PHASE 6, LAHORE +92-3244626888</p>
         </div>
       </div>
     </div>

@@ -156,6 +156,7 @@ export default function CommoditiesTrading({
 
   return (
     <div
+    className="w-full bg-slate-800 overflow-hidden cursor-white-area"
       style={{
         position: "relative",
         height: isMobile ? "auto" : "100vh",
