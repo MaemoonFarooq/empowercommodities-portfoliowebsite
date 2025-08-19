@@ -194,11 +194,11 @@ html {
 
 /* Custom Cursors */
 .cursor-white-area {
-  cursor: url("/white-area-cursor.png"), auto;
+  cursor: url("/dark_cursor.png"), auto;
 }
 
 .cursor-dark-area {
-  cursor: url("/dark-area-cursor.png"), auto;
+  cursor: url("/white_cursor.png"), auto;
 }
 /* Metallic shimmer animation */
 @keyframes metallic-shimmer {

@@ -25,7 +25,7 @@ export function AboutUsPortfolioSection() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="bg-black py-16 lg:py-24">
+    <section ref={sectionRef} className="bg-black py-16 lg:py-24 cursor-dark-area">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Heading */}
         <div

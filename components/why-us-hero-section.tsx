@@ -11,7 +11,7 @@ export function AboutUsHeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen bg-gray-50 overflow-hidden">
+    <section className="relative min-h-screen bg-gray-50 overflow-hidden cursor-white-area">
       {/* Top Right Text */}
       <div
         className={`absolute top-8 right-8 z-20 text-right transition-all duration-1000 ${

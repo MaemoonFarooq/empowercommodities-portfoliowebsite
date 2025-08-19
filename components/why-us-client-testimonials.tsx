@@ -95,7 +95,7 @@ export default function Component() {
   }, [loopedTestimonials.length, isMobile])
 
   return (
-    <section ref={sectionRef} className="bg-white py-8 sm:py-12 lg:py-24 relative overflow-hidden font-inter">
+    <section ref={sectionRef} className="bg-white py-8 sm:py-12 lg:py-24 relative overflow-hidden font-inter cursor-white-area">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-start lg:space-x-12">
         {/* Mobile/Tablet Horizontal Title */}
         <div

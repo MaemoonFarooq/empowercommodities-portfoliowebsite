@@ -39,7 +39,7 @@ export function AboutUsStatsAndFeatures() {
   ]
 
   return (
-    <section ref={sectionRef} className="bg-white">
+    <section ref={sectionRef} className="bg-white cursor-white-area">
       {/* Top Section: Statistics */}
       <div className="bg-[#1a2a3a] py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
