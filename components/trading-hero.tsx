@@ -30,21 +30,6 @@ export function TradingHero({
             custom={0}
             className="flex items-start"
           >
-            <svg
-              width="60"
-              height="40"
-              viewBox="0 0 60 40"
-              fill="none"
-              className="mr-4 mt-2 flex-shrink-0"
-            >
-              <path
-                d="M5 20L45 20"
-                stroke="black"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
 
             <div className="lg:[transform:translateX(0px)_translateY(0px)]">
               <h1 className="text-5xl lg:text-6xl font-black text-black leading-tight tracking-tight lg:[letter-spacing:0] lg:[line-height:1.2]">
@@ -52,7 +37,7 @@ export function TradingHero({
                 <br />
                 TO GLOBAL AND
                 <br />
-                LOCAL FUTURES*
+                LOCAL FUTURES
               </h1>
             </div>
           </motion.div>

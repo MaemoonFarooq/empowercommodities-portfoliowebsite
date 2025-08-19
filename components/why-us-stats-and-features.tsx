@@ -33,9 +33,9 @@ export function AboutUsStatsAndFeatures() {
 
   const features = [
     "LICENSED & REGULATED",
-    "AGRI-SMART SOLUTIONS",
-    "BEGINNER-FRIENDLY ONBOARDING",
-    "TRANSPARENT EXECUTION",
+    "22/5 INTERNATIONAL MARKET EXPOSURE",
+    "EDUCATION BEFORE EXECUTION",
+    "BEGINNER FRIENDLY ONBOARDING",
   ]
 
   return (

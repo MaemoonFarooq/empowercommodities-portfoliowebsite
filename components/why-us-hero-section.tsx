@@ -66,14 +66,6 @@ export function AboutUsHeroSection() {
           </div>
         </div>
 
-        {/* Bottom Right Circle */}
-        <div
-          className={`absolute bottom-8 right-8 w-20 h-20 bg-red-500 rounded-full shadow-lg flex items-center justify-center transition-all duration-1000 delay-1000 z-20 ${
-            isVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"
-          }`}
-        >
-          <span className="text-white text-xs font-bold tracking-wider">D&M*911</span>
-        </div>
       </div>
     </section>
   )

@@ -95,7 +95,7 @@ export function Footer() {
           <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             <h3 className="font-semibold text-gray-900 mb-3 lg:mb-4 text-xs sm:text-sm">POLICIES & CERTIFICATIONS</h3>
             <ul className="space-y-1 lg:space-y-2 text-xs sm:text-sm text-gray-600">
-              {["Privacy Policy", "Disclaimer", "Cookies Policy", "Regulations"].map((item) => (
+              {["Regulations"].map((item) => (
                 <li key={item}>
                   <Link href="#" className="hover:text-gray-900 transition-colors duration-200 inline-block">
                     {item}

@@ -99,7 +99,7 @@ const createObserver = (
           <div className="text-gray-900 font-bold text-4xl sm:text-5xl leading-tight">WHO WE</div>
           <div className="flex items-center justify-center mt-2">
             <div className="text-gray-900 font-bold text-4xl sm:text-5xl leading-tight">ARE</div>
-            <div className="ml-2 text-gray-900 text-lg">(1)</div>
+        
           </div>
         </div>
 
@@ -210,17 +210,7 @@ const createObserver = (
                 ARE
               </div>
 
-              {/* (1) */}
-              <div
-                className="absolute text-gray-900"
-                style={{
-                  fontSize: "1.5rem",
-                  top: "10px",
-                  left: "110%",
-                }}
-              >
-                (1)
-              </div>
+
 
               {/* Circle with logo */}
               <div
