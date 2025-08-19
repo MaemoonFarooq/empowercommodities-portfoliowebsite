@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { Twitter, Facebook, Youtube, Instagram, Linkedin, Globe, ChevronDown } from "lucide-react"
-import { XIcon } from "./XIcon"   // <-- import custom icon
+import { XIcon } from "./XIcon"   // <-- custom X icon
 
 export function Footer() {
   const [isVisible, setIsVisible] = useState(false)
@@ -26,6 +26,15 @@ export function Footer() {
     return () => observer.disconnect()
   }, [])
 
+  // Define social media links
+  const socialLinks = [
+    { Icon: XIcon, href: "https://x.com" },
+    { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61576423055091" },
+    { Icon: Youtube, href: "#" },
+    { Icon: Instagram, href: "https://www.instagram.com/empowercommoditiesltd" },
+    { Icon: Linkedin, href: "https://www.linkedin.com/company/empower-commodities-pvt-ltd/" },
+  ]
+
   return (
     <footer ref={footerRef} className="bg-gray-50 py-8 sm:py-12 lg:py-16 cursor-white-area">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,9 +48,14 @@ export function Footer() {
             <h3 className="font-semibold text-gray-900 mb-3 lg:mb-4 text-xs sm:text-sm">ACCESS LIVE MARKET</h3>
             <ul className="space-y-1 lg:space-y-2 text-xs sm:text-sm text-gray-600">
               <li>
-                <Link href="#" className="hover:text-gray-900 transition-colors duration-200 inline-block">
+                <a 
+                  href="https://www.tradingview.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-gray-900 transition-colors duration-200 inline-block"
+                >
                   Trading View
-                </Link>
+                </a>
               </li>
             </ul>
 
@@ -49,7 +63,7 @@ export function Footer() {
             <ul className="space-y-1 lg:space-y-2 text-xs sm:text-sm text-gray-600">
               {["Comodities","Energies","Currency Payers","Indices","Agriculture"].map((item) => (
                 <li key={item}>
-                  <Link href="#" className="hover:text-gray-900 transition-colors duration-200 inline-block">
+                  <Link href="/products" className="hover:text-gray-900 transition-colors duration-200 inline-block">
                     {item}
                   </Link>
                 </li>
@@ -58,13 +72,36 @@ export function Footer() {
 
             <h3 className="font-semibold text-gray-900 mb-3 lg:mb-4 mt-6 text-xs sm:text-sm">APPS</h3>
             <ul className="space-y-1 lg:space-y-2 text-xs sm:text-sm text-gray-600">
-              {["Mobile Android", "Mobile IOS", "Desktop"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="hover:text-gray-900 transition-colors duration-200 inline-block">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <a 
+                  href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5&hl=en" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-900 transition-colors duration-200 inline-block"
+                >
+                  Mobile Android
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://apps.apple.com/us/app/metatrader-5/id413251709" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-900 transition-colors duration-200 inline-block"
+                >
+                  Mobile IOS
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://download.mql5.com/cdn/web/pakistan.mercantile.exchange/mt5/pmex5setup.exe" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-900 transition-colors duration-200 inline-block"
+                >
+                  Desktop
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -73,7 +110,7 @@ export function Footer() {
             <h3 className="font-semibold text-gray-900 mb-3 lg:mb-4 text-xs sm:text-sm">TOOLS</h3>
             <ul className="space-y-1 lg:space-y-2 text-xs sm:text-sm text-gray-600">
               <li>
-                <Link href="#" className="hover:text-gray-900 transition-colors duration-200 inline-block">
+                <Link href="/" className="hover:text-gray-900 transition-colors duration-200 inline-block">
                   Market Watch
                 </Link>
               </li>
@@ -81,13 +118,21 @@ export function Footer() {
 
             <h3 className="font-semibold text-gray-900 mb-3 lg:mb-4 mt-6 text-xs sm:text-sm">ABOUT COMPANY</h3>
             <ul className="space-y-1 lg:space-y-2 text-xs sm:text-sm text-gray-600">
-              {["Who we are", "Careers", "Blogs"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="hover:text-gray-900 transition-colors duration-200 inline-block">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link href="/about-us" className="hover:text-gray-900 transition-colors duration-200 inline-block">
+                  Who we are
+                </Link>
+              </li>
+              <li>
+                <Link href="/careers" className="hover:text-gray-900 transition-colors duration-200 inline-block">
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="hover:text-gray-900 transition-colors duration-200 inline-block">
+                  Blogs
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -95,13 +140,16 @@ export function Footer() {
           <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             <h3 className="font-semibold text-gray-900 mb-3 lg:mb-4 text-xs sm:text-sm">POLICIES & CERTIFICATIONS</h3>
             <ul className="space-y-1 lg:space-y-2 text-xs sm:text-sm text-gray-600">
-              {["Regulations"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="hover:text-gray-900 transition-colors duration-200 inline-block">
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <a 
+                  href="/MEM330.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-gray-900 transition-colors duration-200 inline-block"
+                >
+                  Regulations
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -119,27 +167,26 @@ export function Footer() {
 
           {/* Social & Language */}
           <div className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <div className="flex space-x-3 lg:space-x-4 mb-4">
-              {[XIcon, Facebook, Youtube, Instagram, Linkedin].map((Icon, i) => (
-                <Link key={i} href="#" className="text-gray-600 hover:text-gray-900 transition-all duration-300">
-                  <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
+            <div className="flex space-x-4 lg:space-x-5 mb-5">
+              {socialLinks.map(({ Icon, href }, i) => (
+                <Link 
+                  key={i} 
+                  href={href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-900 transition-all duration-300"
+                >
+                  <Icon className="w-6 h-6 lg:w-7 lg:h-7" />
                 </Link>
               ))}
             </div>
 
-            <div className="flex space-x-3 lg:space-x-4 mb-6">
-              {["D", "T", "R"].map((letter) => (
-                <Link key={letter} href="#" className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center text-gray-600 hover:bg-gray-300">
-                  <span className="text-xs font-bold">{letter}</span>
-                </Link>
-              ))}
-            </div>
 
             <div className="mb-6">
               <button className="flex items-center space-x-2 text-xs sm:text-sm text-gray-600 hover:text-gray-900">
-                <Globe className="w-3 h-3 lg:w-4 lg:h-4" />
+                <Globe className="w-4 h-4 lg:w-5 lg:h-5" />
                 <span>English</span>
-                <ChevronDown className="w-3 h-3 lg:w-4 lg:h-4" />
+                <ChevronDown className="w-4 h-4 lg:w-5 lg:h-5" />
               </button>
             </div>
 

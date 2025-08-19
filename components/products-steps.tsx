@@ -81,7 +81,7 @@ const internationalCommodities: CommodityItem[] = [
     id: "crude-oil",
     number: "06",
     name: "CRUDE OIL",
-    internationalImage: "/crudeoil.jpg",
+    internationalImage: "/crudeoil.jpeg",
     agrifuturesImage: "",
     description: "Energy commodity trading with global market access and price discovery.",
     position: { top: "33%", left: "66.66%" },

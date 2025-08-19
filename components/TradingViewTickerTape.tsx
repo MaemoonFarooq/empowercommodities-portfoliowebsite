@@ -10,7 +10,7 @@ interface Symbol {
 
 interface TradingViewTickerTapeProps {
   symbols?: Symbol[];
-  colorTheme?: "light" | "dark";
+  colorTheme?: "light" ;
   locale?: string;
   isTransparent?: boolean;
   displayMode?: "adaptive" | "regular";

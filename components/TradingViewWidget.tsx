@@ -29,7 +29,7 @@ function TradingViewWidget() {
       borderDownColor: "#f7525f",
       wickUpColor: "#22ab94",
       wickDownColor: "#f7525f",
-      colorTheme: "light",
+      colorTheme: "dark",
       isTransparent: false,
       locale: "en",
       chartOnly: false,
