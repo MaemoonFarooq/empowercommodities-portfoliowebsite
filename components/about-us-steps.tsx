@@ -18,6 +18,7 @@ function SkewedBox({
   textFontSize = 20,
   isMobile = false,
   isVisible = false,
+  iconSrc = null, // Add iconSrc prop
 }) {
   const [isHovered, setIsHovered] = useState(false)
 
@@ -73,6 +74,23 @@ function SkewedBox({
       >
         {number}
       </div>
+
+      {/* Add icon to SkewedBox */}
+      {!isMobile && iconSrc && (
+        <img 
+          src={iconSrc} 
+          alt="Icon" 
+          style={{
+            position: "absolute",
+            top: "45%",
+            left: "40%",
+            transform: "translate(-50%, -50%)",
+            width: "140px",
+            height: "140px",
+          }}
+        />
+      )}
+
       <div
         style={{
           fontWeight: "bold",
@@ -172,6 +190,7 @@ export default function EmpowerCommodities(props: Record<string, unknown>) {
     box1TextColor = "#FFFFFF",
     box1TopLeftText = "LICENSED BY SECP",
     box1BottomLeftText = "01",
+    box1IconSrc = "/icon.png",
     box2Top = 480,
     box2Left = 710,
     box2Width = 310,
@@ -182,6 +201,7 @@ export default function EmpowerCommodities(props: Record<string, unknown>) {
     box2TextColor = "#FFFFFF",
     box2TopLeftText = "PMEX CORPORATE MEMBER",
     box2BottomLeftText = "02",
+    box2IconSrc = "/icon2.png",
     box3Top = 190,
     box3Left = 710,
     box3Width = 310,
@@ -192,6 +212,7 @@ export default function EmpowerCommodities(props: Record<string, unknown>) {
     box3TextColor = "#FFFFFF",
     box3TopLeftText = "FREE ACCOUNT OPENING",
     box3BottomLeftText = "03",
+    box3IconSrc = "/icon3.png",
     box4Top = 390,
     box4Left = 1350,
     box4Width = 390,
@@ -200,6 +221,7 @@ export default function EmpowerCommodities(props: Record<string, unknown>) {
     box4BorderWidth = 1,
     box4BorderRadius = 20,
     box4ImageSrc = "aboutusimage.jpg",
+    box4IconSrc = "/icon4.png",
     circleTop = 200,
     circleLeft = 1300,
     circleDiameter = 80,
@@ -263,6 +285,16 @@ export default function EmpowerCommodities(props: Record<string, unknown>) {
     lineHeight: 1.2,
     maxWidth: "80%",
     transition: "color 0.3s ease",
+  }
+
+  const iconStyle = {
+    position: "absolute",
+    top: "45%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "120px",
+    height: "120px",
+    display: isMobile ? "none" : "block",
   }
 
   const imageBoxStyle = {
@@ -389,6 +421,21 @@ export default function EmpowerCommodities(props: Record<string, unknown>) {
           onMouseLeave={() => setBox1Hovered(false)}
         >
           <div style={numberStyle(box1Hovered)}>{box1BottomLeftText}</div>
+          {!isMobile && box1IconSrc && (
+            <img 
+              src={box1IconSrc || "/placeholder.svg"} 
+              alt="Icon 1" 
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "210px",
+                height: "210px",
+                display: isMobile ? "none" : "block",
+              }} 
+            />
+          )}
           <div style={textStyle}>{box1TopLeftText}</div>
         </div>
 
@@ -410,6 +457,9 @@ export default function EmpowerCommodities(props: Record<string, unknown>) {
           onMouseLeave={() => setBox2Hovered(false)}
         >
           <div style={numberStyle(box2Hovered)}>{box2BottomLeftText}</div>
+          {!isMobile && box2IconSrc && (
+            <img src={box2IconSrc || "/placeholder.svg"} alt="Icon 2" style={iconStyle} />
+          )}
           <div style={textStyle}>{box2TopLeftText}</div>
         </div>
 
@@ -431,6 +481,9 @@ export default function EmpowerCommodities(props: Record<string, unknown>) {
           onMouseLeave={() => setBox3Hovered(false)}
         >
           <div style={numberStyle(box3Hovered)}>{box3BottomLeftText}</div>
+          {!isMobile && box3IconSrc && (
+            <img src={box3IconSrc || "/placeholder.svg"} alt="Icon 3" style={iconStyle} />
+          )}
           <div style={textStyle}>{box3TopLeftText}</div>
         </div>
       </div>
@@ -496,6 +549,7 @@ export default function EmpowerCommodities(props: Record<string, unknown>) {
           text="STEP BY STEP GUIDANCE"
           isMobile={isMobile}
           isVisible={skewedBoxVisible}
+          iconSrc={box4IconSrc} // Pass icon to SkewedBox
         />
       </div>
     </section>
