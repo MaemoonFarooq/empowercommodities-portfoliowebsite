@@ -28,7 +28,7 @@ export function Footer() {
 
   // Define social media links
   const socialLinks = [
-    { Icon: XIcon, href: "https://x.com" },
+    { Icon: XIcon, href: "https://x.com/Empower330?t=3kWdQShtFrwlt-RgXjfI0A&s=09" },
     { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61576423055091" },
     { Icon: Youtube, href: "#" },
     { Icon: Instagram, href: "https://www.instagram.com/empowercommoditiesltd" },
