@@ -52,7 +52,7 @@ export function Navbar() {
             )}
 
             {/* Desktop menu */}
-            <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+            <div className="hidden md:flex items-center space-x-6 lg:space-x-8 ml-[100px]">
               <Link href="/" className="nav-link">HOME</Link>
               <Link href="/products" className="nav-link">PRODUCTS</Link>
               <Link href="/careers" className="nav-link">CAREERS</Link>
@@ -60,7 +60,7 @@ export function Navbar() {
           </div>
 
           {/* Logo */}
-          <div className="flex items-center animate-fade-in">
+          <div className="flex items-center animate-fade-in ml-25 ">
             <Link href="/" className="hover:scale-105 transition-transform duration-300">
               <Image
                 src="/navbar-logo.png"

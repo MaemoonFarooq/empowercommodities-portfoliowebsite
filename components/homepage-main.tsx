@@ -7,9 +7,11 @@ import { Footer } from "./footer";
 import TwoImagesSection from "./home-images";
 import PopupForm from "./home-popup";
 import BlogSection from "./blog-section";
+import { Analytics } from "@vercel/analytics/next"
 export function HomepageMain() {
   return (
     <div className="min-h-screen flex flex-col">
+      <Analytics />
       <Navbar/> {/* Top navbar */}
       <main className="flex-grow">
         

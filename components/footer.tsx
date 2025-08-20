@@ -30,7 +30,7 @@ export function Footer() {
   const socialLinks = [
     { Icon: XIcon, href: "https://x.com/Empower330?t=3kWdQShtFrwlt-RgXjfI0A&s=09" },
     { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61576423055091" },
-    { Icon: Youtube, href: "#" },
+    { Icon: Youtube, href: "https://www.youtube.com/channel/UC5ML1iqAqapT7o2vyiDkbWA" },
     { Icon: Instagram, href: "https://www.instagram.com/empowercommoditiesltd" },
     { Icon: Linkedin, href: "https://www.linkedin.com/company/empower-commodities-pvt-ltd/" },
   ]
