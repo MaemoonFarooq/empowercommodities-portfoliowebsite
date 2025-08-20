@@ -23,22 +23,21 @@ export function HomepageMinimal() {
         >
 <div className="flex justify-center mb-0">
   <video
-    src="/22.mp4" // Put your video in /public folder
+    src="/22.mp4"
     width={500}
     height={500}
     autoPlay
-    loop
     muted
     playsInline
-    className="hover:scale-105 transition-transform duration-300 rounded-lg"
-    onTimeUpdate={(e) => {
-      const vid = e.target;
-      if (vid.currentTime >= vid.duration - 0.05) {
-        vid.currentTime = 0.05; // jump before black frame
-      }
+    className="hover:scale-105 transition-transform duration-300 rounded-lg object-cover"
+    onEnded={(e) => {
+      const vid = e.currentTarget;
+      vid.currentTime = 0.15; // jump slightly after 0 to avoid blank
+      vid.play();
     }}
   />
 </div>
+
 
         </div>
 
