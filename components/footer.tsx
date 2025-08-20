@@ -61,7 +61,7 @@ export function Footer() {
 
             <h3 className="font-semibold text-gray-900 mb-3 lg:mb-4 mt-6 text-xs sm:text-sm">CATEGORIES</h3>
             <ul className="space-y-1 lg:space-y-2 text-xs sm:text-sm text-gray-600">
-              {["Comodities","Energies","Currency Payers","Indices","Agriculture"].map((item) => (
+              {["Commodities","Energies","Currency Pairs","Indices","Agriculture"].map((item) => (
                 <li key={item}>
                   <Link href="/products" className="hover:text-gray-900 transition-colors duration-200 inline-block">
                     {item}
@@ -120,7 +120,7 @@ export function Footer() {
             <ul className="space-y-1 lg:space-y-2 text-xs sm:text-sm text-gray-600">
               <li>
                 <Link href="/about-us" className="hover:text-gray-900 transition-colors duration-200 inline-block">
-                  Who we are
+                  Who We Are
                 </Link>
               </li>
               <li>
