@@ -66,7 +66,7 @@ export default function PopupForm() {
         className="
           bg-white text-gray-900 rounded-2xl shadow-2xl max-w-md w-full mx-4 relative overflow-hidden transform
           /* Mobile-only shift: moves popup left (-x) and up (-y) on screens ≤640px */
-          max-sm:-translate-x-155 max-sm:-translate-y-338
+          max-sm:-translate-x-[155] max-sm:-translate-y-[338]
         "
       >
         {/* Header */}
