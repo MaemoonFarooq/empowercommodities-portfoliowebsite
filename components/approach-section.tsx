@@ -182,11 +182,6 @@ export default function ApproachSection() {
             <p className="relative text-gray-600 tracking-wide text-lg md:text-xl lg:text-2xl md:-left-3 lg:-left-5 xl:-left-25">
               WE DON'T PROMISE RETURNS. WE DELIVER ACCESS, SUPPORT, AND DISCLOSURE.
             </p>
-            <div className="mt-6 md:mt-12">
-              <p className="text-gray-500 tracking-[0.2em] md:tracking-[0.4em] font-medium text-sm md:text-base lg:text-lg text-center md:text-left md:ml-[40%] lg:ml-[50%] xl:ml-[60%]">
-                CLIENTS WILL BE ADDED
-              </p>
-            </div>
           </motion.div>
         </div>
       </div>

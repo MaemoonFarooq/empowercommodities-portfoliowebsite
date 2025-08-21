@@ -81,7 +81,7 @@ export function CareerCallToBrokers() {
                 }`}
               >
 <a
-  href="https://www.aof.com.pk/login.php"
+  href="https://www.aof.com.pk/?ODk4ODc3Mjg0ODc3NDY0NDg4NDQ4NjQ5NDcyNDQ4NzQ3OTQ0NDE4Mg=="
   target="_blank" // remove this if you want to open in same tab
   rel="noopener noreferrer"
 >

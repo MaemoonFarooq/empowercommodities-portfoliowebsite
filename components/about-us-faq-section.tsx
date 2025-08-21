@@ -65,7 +65,7 @@ export function AboutUsFaqSection() {
     {
       question: "WHERE ARE YOUR OFFICES LOCATED? ",
       answer:
-      "We operate from three offices in Lahore: DHA Phase 6 (Head Office), DHA Phase 2 / Q Block, and Shadman 1. Walk-ins are welcome during business hours."
+      "We operate from four offices in Islamabad: 3rd Floor 3006 GIGA Mall/ World Trade Center DHA Phase 2, Sector F and Lahore: DHA Phase 6 (Head Office), DHA Phase 2 / Q Block, and Shadman 1. Walk-ins are welcome during business hours."
     },
 
     {
@@ -77,7 +77,7 @@ export function AboutUsFaqSection() {
     {
       question: "WHO DO I CONTACT FOR SUPPORT?",
       answer:
-      "You can reach us via WhatsApp at +92 310 4052014 or email us at empowercommodities@gmail.com. Our support team will respond within business hours."
+      "You can reach us via WhatsApp at +92 324 4626888  or email us at empowercommodities@gmail.com. Our support team will respond within business hours."
     },
   ]
 

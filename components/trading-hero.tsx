@@ -89,7 +89,7 @@ export function TradingHero({
 >
                 <motion.div whileHover={{ scale: 1.05 }}>
 <Link
-  href="https://www.aof.com.pk/login.php"
+  href="https://www.aof.com.pk/?ODk4ODc3Mjg0ODc3NDY0NDg4NDQ4NjQ5NDcyNDQ4NzQ3OTQ0NDE4Mg=="
   passHref
   target="_blank"
   rel="noopener noreferrer"

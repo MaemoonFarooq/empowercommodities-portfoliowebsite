@@ -65,7 +65,7 @@ export function HomepageMinimal() {
 </Link>
           
 <a
-  href="https://www.aof.com.pk/login.php"
+  href="https://www.aof.com.pk/?ODk4ODc3Mjg0ODc3NDY0NDg4NDQ4NjQ5NDcyNDQ4NzQ3OTQ0NDE4Mg=="
   target="_blank"
   rel="noopener noreferrer"
 >
@@ -73,6 +73,7 @@ export function HomepageMinimal() {
     Start Trading
   </Button>
 </a>
+
 
         </div>
       </div>
