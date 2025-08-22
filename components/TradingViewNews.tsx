@@ -20,7 +20,7 @@ const TradingViewNewsWidget: React.FC<TradingViewNewsWidgetProps> = memo(
     colorTheme = "light",
     isTransparent = false,
     locale = "en",
-    width = 1910,
+    width = "100%", // ✅ default full width instead of fixed pixels
     height = 550,
     className = "",
   }) => {
@@ -48,8 +48,7 @@ const TradingViewNewsWidget: React.FC<TradingViewNewsWidgetProps> = memo(
       copyright.className = "tradingview-widget-copyright";
 
       const link = document.createElement("a");
-      link.href =
-        "https://www.tradingview.com/news-flow/?priority=top_stories";
+      link.href = "https://www.tradingview.com/news-flow/?priority=top_stories";
       link.rel = "noopener nofollow";
       link.target = "_blank";
 
@@ -71,7 +70,7 @@ const TradingViewNewsWidget: React.FC<TradingViewNewsWidgetProps> = memo(
         colorTheme,
         isTransparent,
         locale,
-        width: isMobile ? "100%" : width,
+        width: isMobile ? "100%" : "100%", // ✅ always scale to parent width
         height: isMobile ? 400 : height,
       });
 
@@ -98,11 +97,8 @@ const TradingViewNewsWidget: React.FC<TradingViewNewsWidgetProps> = memo(
         className={`tradingview-widget-container ${className}`}
         ref={container}
         style={{
-          width: isMobile
-            ? "100%"
-            : typeof width === "number"
-            ? `${width}px`
-            : width,
+          width: "100%", // ✅ responsive container
+          maxWidth: "100%", // ✅ prevents overflow on smaller desktops
         }}
       />
     );
